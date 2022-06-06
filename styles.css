@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', Sans-Serif;
+}
+
+.main {
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    overflow-y: scroll;
+    font-size: 18px
+}
+
+.main::after {
+    content: "";
+    background-color: rgba(58, 58, 158, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.main > h1{
+    font-size: 32px;
+    text-align: center;
+    z-index: 2;
+    position: relative
+}
+
+.main > p {
+    font-size: 16px;
+    text-align: center;
+    z-index: 2;
+    position: relative
+}
+
+.content {
+    background-color: rgb(27, 27, 50, .9);
+    max-width: 650px;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+}
+
+#name, #email, #number, #dropdown, #favourite, #comment {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 5px 10px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+label[for=name], 
+label[for=email],
+label[for=number],
+label[for=dropdown],
+label[for=comment] {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.checkbox-input,
+.radio-input {
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.clue{
+    font-size: 14px;
+    color: gray;
+}
+
+#comment {
+    min-height: 140px;
+}
+
+label[for=comment]{
+    margin-top: 30px
+}
+
+#submit {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background: #37af65;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
